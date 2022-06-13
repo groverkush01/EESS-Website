@@ -1,0 +1,30 @@
+.UpdateContainer{
+    padding-top: 2em;
+    
+}
+
+.Update_card  {
+    /* border: 2px solid white; */
+   
+    margin: 3rem;
+    display: flex;
+  }
+
+.Update_descp{
+    padding:1rem;
+}
+.Update_heading{
+    font-size: 1.25rem;
+}
+ButtonAnimate{
+    margin-top: 5rem;
+    
+}
+.Update_card_content{
+    padding: 1rem;
+}
+  .Update_card  img {
+    margin: auto;
+    height: 60%;
+    width: 20%;
+  }

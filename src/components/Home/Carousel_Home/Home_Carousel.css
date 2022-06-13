@@ -1,0 +1,22 @@
+.Carousel_body{
+    margin: auto;
+    padding-top: 4em;
+    padding-bottom: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100vw;
+}
+.Carousel_CurrSlide{
+    width: 80vw;
+    height: 70vh;
+    border-radius: 1em;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.CurrSlide_content{
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+}
