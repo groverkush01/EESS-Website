@@ -1,0 +1,15 @@
+.home_body{
+    padding-top: 60px;
+    width: auto;
+    color: white;
+    background-color: black;
+}
+.home_body>.Home_dep_image{
+    background-image: url('../../Assets/img_home/dep_image_Home.jpg');
+    background-attachment: fixed;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    width: auto;
+}

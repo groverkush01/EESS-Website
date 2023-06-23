@@ -1,0 +1,186 @@
+.LandingSection_container {
+  position: relative;
+  width: 100vw;
+  height: calc(100vh - 60px);
+  overflow-y: hidden;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.LandingSection_content {
+  width: 50vw;
+  max-width: 800px;
+  z-index: 1;
+}
+
+.LandingSection_content > h1,
+.LandingSection_content > h3,
+.LandingSection_content > p {
+  position: relative;
+  bottom: 0;
+}
+
+.LandingSection_content > h1 {
+  font-size: 2.5em;
+  color: #ff8800;
+  animation: 1.5s 1 headerAnimate;
+}
+
+.LandingSection_content > h3 {
+  font-size: 1.5em;
+  color: #ffffff;
+  animation: 1.75s 1 headerAnimate;
+}
+
+.LandingSection_content > p {
+  font-size: 0.9em;
+  color: #ffffff;
+  animation: 2s 1 headerAnimate;
+  font-weight: 300;
+}
+
+.Strip1 {
+  position: absolute;
+  width: 120vw;
+  height: 50vh;
+  background: linear-gradient(
+    124.29deg,
+    rgba(39, 41, 38, 0.182) 0%,
+    rgba(40, 42, 39, 0.7) 54.43%,
+    rgba(39, 41, 38, 0.182) 88.66%
+  );
+  opacity: 0.7;
+  transform-origin: left bottom;
+  left: 0%;
+  bottom: -5%;
+  transform: rotate(-20deg);
+  animation: 1.5s 1 slide1;
+}
+
+.Strip2 {
+  position: absolute;
+  width: 120vw;
+  height: 50vh;
+  background: linear-gradient(
+    124.29deg,
+    rgba(39, 41, 38, 0.182) 0%,
+    rgba(40, 42, 39, 0.7) 54.43%,
+    rgba(39, 41, 38, 0.182) 88.66%
+  );
+  transform-origin: left bottom;
+  left: 0%;
+  bottom: -25%;
+  transform: rotate(-20deg);
+  animation: 1.5s 1 slide2;
+}
+
+.Strip3 {
+  position: absolute;
+  width: 120vw;
+  height: 50vh;
+  background: linear-gradient(
+    124.29deg,
+    rgba(39, 41, 38, 0.182) 0%,
+    rgba(40, 42, 39, 0.7) 54.43%,
+    rgba(39, 41, 38, 0.182) 88.66%
+  );
+  transform-origin: left bottom;
+  left: 0%;
+  bottom: -15%;
+  transform: rotate(-20deg);
+  animation: 1.5s 1 slide3;
+}
+
+.Strip4,
+.Strip5 {
+  position: absolute;
+  width: 120vw;
+  height: 50vh;
+  background: linear-gradient(
+    124.29deg,
+    rgba(39, 41, 38, 0.182) 0%,
+    rgba(40, 42, 39, 0.7) 54.43%,
+    rgba(39, 41, 38, 0.182) 88.66%
+  );
+  opacity: 0.7;
+  transform-origin: left bottom;
+  left: 0%;
+  bottom: 80%;
+  transform: rotate(-20deg);
+}
+
+.Strip5 {
+  left: 0%;
+  bottom: -120%;
+}
+
+@keyframes headerAnimate {
+  from {
+    bottom: -50px;
+    opacity: 0.2;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes slide1 {
+  from {
+    left: 220vw;
+    bottom: 170vh;
+  }
+  to {
+    left: 0%;
+    bottom: -5%;
+  }
+}
+
+@keyframes slide2 {
+  from {
+    left: 280vw;
+    bottom: 200vh;
+  }
+  to {
+    left: 0%;
+    bottom: -25%;
+  }
+}
+
+@keyframes slide3 {
+  from {
+    left: -220vw;
+    bottom: -120vh;
+  }
+  to {
+    left: 0%;
+    bottom: -15%;
+  }
+}
+
+@media (max-width: 800px) {
+  .LandingSection_container {
+    width: 100vw;
+    height: calc(100vh - 60px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .LandingSection_content {
+    width: 90vw;
+    z-index: 1;
+  }
+
+  .Strip1,
+  .Strip2,
+  .Strip3, 
+  .Strip4,
+  .Strip5 {
+    display: none;
+  }
+}

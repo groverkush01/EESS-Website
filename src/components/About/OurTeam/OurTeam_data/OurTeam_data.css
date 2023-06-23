@@ -1,0 +1,116 @@
+/* Main Outer Container of OurTeam*/
+.ourTeam__container {
+    width: 70vw;
+    padding: 2em;
+    text-align: center;
+}
+
+.ourTeam__member {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 4%;
+    row-gap: 1.5em;
+}
+
+.ourTeam__teamCard {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* row-gap: 0.5em; */
+}
+
+.ourTeam__teamCard .img_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    /* transition: 2.0s all ease-in-out; */
+}
+
+.img_container img {
+    transition: 0.75s all ease;
+    width: 180px;
+    height: auto;
+    max-width: 80%;
+    aspect-ratio: 1;
+    border-radius: 5%;
+    opacity: 1;
+    backface-visibility: hidden;
+    margin-bottom: 0.5em;
+}
+
+.ourTeam__teamCard .img_container .img_hover_content {
+    position: absolute;
+    opacity: 0;
+    transition: 0.75s all ease-in-out;
+
+}
+
+.img_hover_content div {
+    color: rgb(255, 255, 255);
+    font-size: small;
+}
+
+.img_container:hover img {
+    opacity: 0.2;
+    transform: rotateY(360deg);
+}
+
+.img_container:hover .img_hover_content {
+    opacity: 1;
+
+}
+
+.img_hover_content{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: space-around;
+}
+
+.ourTeam__memberPos {
+    font-size: 0.9em;
+    font-weight: 300;
+    color: #ffffff;
+}
+
+.ourTeam__memberName {
+    font-size: 1.1em;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+@media (max-width: 720px) {
+    .ourTeam__container {
+        padding: 2em 0.8em;
+    }
+
+    .ourTeam__member {
+        column-gap: 5%;
+        padding: 0;
+    }
+
+    .ourTeam__teamCard {
+        width: 47.5%;
+    }
+
+    .img_container img {
+        max-width: 90%;
+    }
+
+    .img_container:hover img {
+        opacity: 1;
+    }
+    .img_hover_content div {
+        display: none;
+    }
+    .ourTeam__memberPos {
+        font-size: 0.75em;
+    }
+    .ourTeam__memberName {
+        font-size: 0.8em;
+    }
+}

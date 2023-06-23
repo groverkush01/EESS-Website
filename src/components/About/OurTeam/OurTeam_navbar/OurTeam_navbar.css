@@ -1,0 +1,70 @@
+.OurTeam_navbar_body{
+    background: rgba(0, 0, 0, 0.5);
+    width: 20vw;
+    border-radius: 0.8em;
+}
+.OurTeam_navbar_nav{
+    width: 70%;
+    padding: 2em 0;
+    margin: auto;
+}
+.OurTeam_navbar__navMenu{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+.OurTeam_navbar__navMenu>.Link {
+    display: flex;
+    align-items: center;
+    height: 2.2em;
+    font-size: 1.05em;
+    color: white;
+    text-decoration: none;
+    transition: all ease 0.5s;
+    margin: 0.5em 0;
+}
+.OurTeam_navbar__navMenu>.Link:hover {
+    /* background: rgba(40, 42, 39, 0.5); */
+    border-radius: 0.5em;
+}
+.OurTeam_navbar__navMenu>.Link>li{
+    margin-left: 0.5em;
+}
+.OurTeam_navbar__navMenu>.Link>svg{
+    margin-left: 1em;
+    height: 1.5em;
+}
+.OurTeam_navbar__navMenu>.active{
+    /* background: rgba(40, 42, 39, 0.5); */
+    border-radius: 0.5em;
+}
+.OurTeam_navbar__navMenu>.active{
+    transition: all ease 0.5s;
+    color: #ff8800;
+}
+.OurTeam_navbar__navMenu>.active>svg>path{
+    fill: #ff8800;
+}
+.OurTeam_navbar__navMenu>.active>svg>g>path{
+    fill: #ff8800;
+}
+
+@media (max-width:720px) {
+    .OurTeam_navbar_body{
+        width: 15vw;
+    }
+    .OurTeam_navbar_nav{
+        max-width: 70%;
+    }
+    .OurTeam_navbar__navMenu>.Link {
+        aspect-ratio: 1;
+    }
+    .OurTeam_navbar__navMenu>.Link>svg{
+        margin: auto;
+    }
+    .OurTeam_navbar__navMenu>.Link>li{
+        display: none;
+    }
+}

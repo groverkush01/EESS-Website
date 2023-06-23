@@ -1,0 +1,20 @@
+.about_body{
+    width: auto;
+    color: white;
+    background-color: black;
+}
+.about_body>.dep_image{
+    background-image: url('../../Assets/department_img.jpg');
+    background-attachment: fixed;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    width: auto;
+}
+@media (max-width:800px) {
+    .about_body>.dep_image{
+        background-position: right;
+    }
+}
+

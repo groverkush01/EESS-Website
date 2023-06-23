@@ -1,0 +1,127 @@
+.Carousel_body {
+    margin: auto;
+    padding-top: 4em;
+    padding-bottom: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100vw;
+}
+
+.Carousel_CurrSlide {
+    position: relative;
+    transition: 0.5s all ease;
+    animation: 0.5s 1 fade;
+}
+
+@keyframes fade{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.Carousel_CurrSlide>img {
+    object-fit: cover;
+    margin: auto;
+    width: 80vw;
+    aspect-ratio: 2.5;
+    border-radius: 1em;
+}
+
+.Carousel_CurrSlide>.CurrSlide_content {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 50%);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    bottom: 0;
+    opacity: 0;
+    transition: 0.5s all ease-in;
+    width: 100%;
+}
+
+.CurrSlide_content>.Carousel_descp {
+    font-weight: 300;
+    max-width: 70%;
+}
+
+.Carousel_CurrSlide:hover>.CurrSlide_content {
+    opacity: 1;
+}
+
+.leftArrow,
+.rightArrow {
+    transition: 0.3s all ease-in;
+    cursor: pointer;
+    width: 2.5em;
+}
+
+.leftArrow:hover,
+.rightArrow:hover {
+    transform: scale(1.25);
+}
+
+.Home_SlideButton {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 0.5rem;
+}
+
+.Home_SlideButton>.SlideBtn {
+    width: 10px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    border: 2px solid #ffa401;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.Home_SlideButton>.SlideBtn.active {
+    background-color: #ffa401;
+}
+
+@media (max-width:800px) {
+
+    .Carousel_CurrSlide {
+        position: static;
+        transition: 0.5s all ease;
+    }
+
+    .Carousel_CurrSlide>img {
+        width: 80vw;
+        aspect-ratio: 1.8;
+    }
+
+    .Carousel_CurrSlide>.CurrSlide_content {
+        margin-top: 1em;
+        padding: 1em;
+        background: linear-gradient(124.29deg,
+                #282A27B2 54.99%,
+                rgba(39, 41, 38, 0.18) 89.22%);
+        position: relative;
+        opacity: 1;
+        border-radius: 1em;
+    }
+
+    .CurrSlide_content>.Carousel_descp {
+        text-align: justify;
+        max-width: 100%;
+    }
+
+    .leftArrow,
+    .rightArrow {
+        width: 2em;
+    }
+
+    .leftArrow:hover,
+    .rightArrow:hover {
+        transform: scale(1);
+    }
+
+}
